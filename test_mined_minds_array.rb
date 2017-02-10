@@ -16,4 +16,14 @@ class TestMinedMindsArray < Minitest::Test
 		results = mmarray()
 		assert_equal(100, results.length)
 	end
+
+	def test_two_is_two
+		results = mmarray()
+		assert_equal(2, mmarray[1])
+	end
+
+	def test_51_is_51
+		results = mmarray()
+		assert_equal(51, mmarray[50])
+	end
 end
