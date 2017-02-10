@@ -21,10 +21,10 @@ class TestMinedMindsArray < Minitest::Test
 		results = mmarray()
 		assert_equal(2, mmarray[1])
 	end
-
-	def test_51_is_51
+	#Changed test, was 51 but that is div by 3 (oops). Using 52 now.
+	def test_52_is_52
 		results = mmarray()
-		assert_equal(51, mmarray[50])
+		assert_equal(52, mmarray[51])
 	end
 	#Tests for div by 15
 	def test_fifteen_mined_minds

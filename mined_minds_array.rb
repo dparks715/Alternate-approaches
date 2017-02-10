@@ -15,6 +15,8 @@ def mmarray()
 						'mined minds'
 					elsif val % 5 == 0
 						'minds'
+					elsif val % 3 == 0
+						'mined'
 					else
 						val
 						end }
