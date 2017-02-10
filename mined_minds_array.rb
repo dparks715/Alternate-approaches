@@ -9,9 +9,12 @@ def mmarray()
 
 	#Will use .map method to replace our numbers
 	#Mapping (iterating over) each value in the array.  Uses val as a variable for the value at each index position.
-	#Using an IF statement inside the block to replace numbers divisible by 5 and 3.
+	#Using an IF statement inside the block to replace numbers divisible by 5 and 3 first.
+	#Replaces divisible by 5 next.
 	nums.map { |val| if val % 5 == 0 && val % 3 == 0
 						'mined minds'
+					elsif val % 5 == 0
+						'minds'
 					else
 						val
 						end }
