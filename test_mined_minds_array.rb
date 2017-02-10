@@ -51,4 +51,19 @@ class TestMinedMindsArray < Minitest::Test
 		results = mmarray()
 		assert_equal('minds', mmarray[4])
 	end
+
+	def test_ten_minds
+		results = mmarray()
+		assert_equal('minds', mmarray[9])
+	end
+
+	def test_thirty_five_minds
+		results = mmarray()
+		assert_equal('minds', mmarray[34])
+	end
+
+	def test_fifty_minds
+		results = mmarray()
+		assert_equal('minds', mmarray[49])
+	end
 end
