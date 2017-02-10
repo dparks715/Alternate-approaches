@@ -12,6 +12,8 @@ def mmarray()
 	#Using an IF statement inside the block to replace numbers divisible by 5 and 3.
 	nums.map { |val| if val % 5 == 0 && val % 3 == 0
 						'mined minds'
+					else
+						val
 						end }
 
 end
