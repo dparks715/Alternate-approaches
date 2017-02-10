@@ -71,4 +71,29 @@ class TestMinedMindsArray < Minitest::Test
 		results = mmarray()
 		assert_equal('mined', mmarray[2])
 	end
+
+	def test_six_minds
+		results = mmarray()
+		assert_equal('mined', mmarray[5])
+	end
+
+	def test_nine_minds
+		results = mmarray()
+		assert_equal('mined', mmarray[8])
+	end
+
+	def test_eighteen_minds
+		results = mmarray()
+		assert_equal('mined', mmarray[17])
+	end
+
+	def test_twenty_seven_minds
+		results = mmarray()
+		assert_equal('mined', mmarray[26])
+	end
+
+	def test_ninety_nine_minds
+		results = mmarray()
+		assert_equal('mined', mmarray[98])
+	end
 end
