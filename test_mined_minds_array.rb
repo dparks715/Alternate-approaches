@@ -66,4 +66,9 @@ class TestMinedMindsArray < Minitest::Test
 		results = mmarray()
 		assert_equal('minds', mmarray[49])
 	end
+	#Tests for divisible by 3
+	def test_three_minds
+		results = mmarray()
+		assert_equal('mined', mmarray[2])
+	end
 end
