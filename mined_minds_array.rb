@@ -1,0 +1,3 @@
+def mmarray()
+	nums = []
+end

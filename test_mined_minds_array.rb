@@ -6,4 +6,10 @@ class TestMinedMindsArray < Minitest::Test
 	def test_one_equal_one
 		assert_equal(1,1)
 	end
+
+	def test_function_produces_array
+		results = mmarray()
+		assert_equal(Array, results.class)
+		
+	end
 end
