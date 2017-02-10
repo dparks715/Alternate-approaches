@@ -12,4 +12,9 @@ class TestParingFunction < Minitest::Test
 		assert_equal(Array, results.class)
 	end
 
+	def test_array_count_two
+		results = pairs(['A', 'B'])
+		assert_equal(2, results.count)
+	end
+
 end
