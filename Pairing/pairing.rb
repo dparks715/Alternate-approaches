@@ -13,4 +13,10 @@ def pairs(letters)
 	#Converts arguments to arrays and merges corresponding elements
 	#Syntax below will take one[0] and merge with two[0], so on through the index
 	pairs = one.zip(two)
+
+	if one.length != two.length
+		pairs[0] << pairs[-1][0]
+		pairs.delete_at(-1)
+	end
+		pairs
 end
