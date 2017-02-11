@@ -22,4 +22,9 @@ class TestParingFunction < Minitest::Test
 		assert_equal(2, results.count)
 	end
 
+	def test_five_letters_two_pairs
+		results = pairs(['A', 'B', 'C', 'D', 'E'])
+		assert_equal(2, results.count)
+	end
+
 end
