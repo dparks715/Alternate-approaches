@@ -7,4 +7,9 @@ class TestISBN < Minitest::Test
 		assert_equal(1, 1)
 	end
 
+	def test_detect_invalid_chars
+		results = check_chars('1234a5')
+		assert_equal(false, results)	
+	end
+
 end
