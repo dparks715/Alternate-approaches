@@ -9,3 +9,9 @@ def check_chars(isbn)
 		true
 	end
 end
+
+#Function to strip spaces and hypens then return length.
+def strip_length(isbn)
+	isbn.delete!('-' ' ')
+	isbn.length
+end

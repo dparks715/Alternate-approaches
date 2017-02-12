@@ -28,3 +28,12 @@ class TestISBN < Minitest::Test
 	end
 
 end
+
+class TestStrippedLength < Minitest::Test
+
+	def test_length_no_space_dash
+		results = strip_length('123456789')
+		assert_equal(9, results)
+	end
+
+end
