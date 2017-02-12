@@ -29,11 +29,28 @@ class TestISBN < Minitest::Test
 
 end
 
+#Tests for length after removing spaces and dashes.
+#Does NOT remove invalid characters, so these ARE counted as well.
 class TestStrippedLength < Minitest::Test
 
 	def test_length_no_space_dash
 		results = strip_length('123456789')
 		assert_equal(9, results)
+	end
+
+	def test_length_spaces
+		results = strip_length('1 23 45 67 89')
+		assert_equal(9, results)
+	end
+
+	def test_length_dashes
+		results = strip_length('1--23#4-567-8-9')
+		assert_equal(10, results)
+	end
+
+	def test_length_spaces_and_dashes
+		results = strip_length('1 2  3-456--78905hf')
+		assert_equal(13, results)
 	end
 
 end
