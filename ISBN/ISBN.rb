@@ -21,15 +21,16 @@ def check_chars(isbn)
 	isbn_length = strip_length(isbn)
 	#Set match to false, because a match means invalid ISBN.
 	if isbn_length == 10
+		$store_length = 10
 
 		if isbn[0...-1].match(/[^- 0-9]/)
-			$store_length = 10
 			valid = false
 		end
-	else isbn_length == 13
 
+	else isbn_length == 13
+		$store_length = 13
+		
 		if isbn.match(/[^- 0-9]/)
-			$store_length = 13
 			valid = false
 		end
 	end
