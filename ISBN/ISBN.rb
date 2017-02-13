@@ -1,5 +1,7 @@
 #Create program to check if string input is a valid ISBN number
 
+$store_length
+
 #Function to strip spaces and hypens then return length.
 def strip_length(isbn)
 	isbn.delete!('-' ' ')
@@ -21,11 +23,13 @@ def check_chars(isbn)
 	if isbn_length == 10
 
 		if isbn[0...-1].match(/[^- 0-9]/)
+			$store_length = 10
 			valid = false
 		end
 	else isbn_length == 13
 
 		if isbn.match(/[^- 0-9]/)
+			$store_length = 13
 			valid = false
 		end
 	end
