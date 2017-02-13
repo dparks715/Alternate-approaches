@@ -54,3 +54,12 @@ class TestStrippedLength < Minitest::Test
 	end
 
 end
+
+class TestLastChar < Minitest::Test
+
+	def test_last_char_x_true
+		results = last_char('12345X')
+		assert_equal(true, results)		
+	end
+
+end
