@@ -36,3 +36,11 @@ def check_chars(isbn)
 	valid
 		
 end
+
+def last_char(isbn)
+	if isbn[-1].match(/[\dxX]/)
+		true
+	else
+		false
+	end
+end
