@@ -58,8 +58,28 @@ end
 class TestLastChar < Minitest::Test
 
 	def test_last_char_x_true
+		results = last_char('12345x')
+		assert_equal(true, results)		
+	end
+
+	def test_last_char_X_true
 		results = last_char('12345X')
 		assert_equal(true, results)		
+	end
+
+	def test_last_char_num_true
+		results = last_char('123456')
+		assert_equal(true, results)		
+	end
+
+	def test_last_char_h_false
+		results = last_char('12345h')
+		assert_equal(false, results)		
+	end
+
+	def test_last_char_symbol_false
+		results = last_char('12345*')
+		assert_equal(false, results)		
 	end
 
 end
